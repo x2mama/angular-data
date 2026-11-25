@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './user-item.css',
   templateUrl: './user-item.html',
 })
-export class UserItem {}
+export class UserItem {
+  name: string;
+  constructor() {
+    this.name = 'Felipe';
+  }
+}
