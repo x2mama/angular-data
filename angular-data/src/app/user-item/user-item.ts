@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   imports: [],
@@ -7,8 +7,5 @@ import { Component } from '@angular/core';
   templateUrl: './user-item.html',
 })
 export class UserItem {
-  name: string;
-  constructor() {
-    this.name = 'Felipe';
-  }
+  @Input() name = '';
 }
